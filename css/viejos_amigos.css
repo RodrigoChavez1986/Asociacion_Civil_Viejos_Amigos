@@ -1,0 +1,43 @@
+.bg-image-home{
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),  
+    url('../assets/images/ViejosAmigos/Viejos_amigos_frente.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+
+/*media queries*/
+@media screen and (min-width:768px) {
+    .my-height{
+        height: var(--md-height);
+    }
+
+    .bg-image-home{
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),  
+        url('../assets/images/ViejosAmigos/Viejos_amigos_frente.jpg');
+    }    
+}
+
+@media screen and (min-width:992px) {
+    .my-height{
+        height: var(--lg-height);
+    }
+
+    .bg-image-home{
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),          
+        url('../assets/images/ViejosAmigos/Viejos_amigos_frente.jpg');
+    }    
+}

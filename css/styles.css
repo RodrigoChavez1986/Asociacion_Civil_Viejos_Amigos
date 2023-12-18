@@ -1,0 +1,216 @@
+:root{    
+    --clr-primary:#72bc4c;
+    --clr-secondary:#1074ba;
+    --clr-terciary:#b8f243;    
+    
+    --clr-terciary-transparent:rgba(184, 242, 67, 0.500);   
+    --clr-quaternary:#1590e7;
+    --clr-quaternary-transparent:rgba(21, 144, 231, 0.500);
+
+    --clr-background:#ebebeb;    
+    
+    --sm-height:250px;
+    --md-height:400px;
+    --lg-height:450px;   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*colores de fondo*/
+.my-bg-grey{
+    background-color: var(--clr-background);
+}
+
+.my-bg-primary{
+    background-color: var(--clr-primary);
+}
+
+.my-bg-terciary{
+    background-color: var(--clr-terciary);
+}
+
+.my-bg-terciary-transparent{
+    background-color: var(--clr-terciary-transparent);
+}
+
+.my-bg-quaternary-transparent{
+    background-color: var(--clr-quaternary-transparent);
+}
+
+/*color de texto*/
+.my-text-primary{
+    color: var(--clr-primary);
+}
+
+.my-text-secondary{
+    color: var(--clr-secondary);
+}
+
+.my-text-quaternary{
+    color: var(--clr-quaternary);
+}
+
+.my-text-red{
+    color: #fbab04;
+}
+
+hr {
+    height: 2px;    
+}
+
+.my-height{
+    height: var(--sm-height);
+}
+
+
+@media screen and (min-width:768px) {
+    .my-height{
+        height: var(--md-height);
+    }
+
+    .bg-image-home{
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),  
+        url('../assets/images/ViejosAmigos/Viejos_amigos_frente.jpg');    
+    }
+
+    .bg-image-mision{
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),  
+        url('../assets/images/mision-md.webp');    
+    }
+
+    .bg-image-proyecto{
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),  
+        url('../assets/images/proyecto-md.webp');              
+    }
+
+    .bg-image-actividades{
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),  
+        url('../assets/images/actvidades-md.webp');             
+    }
+
+    .bg-image-colabora{
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),  
+        url('../assets/images/colaborar-md.webp');                
+    }    
+}
+
+@media screen and (min-width:992px) {
+    .my-height{
+        height: var(--lg-height);
+    }
+
+    .bg-image-home{
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),  
+       
+        url('../assets/images/ViejosAmigos/Viejos_amigos_frente.jpg');
+    }
+
+    .bg-image-mision{
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),  
+        url('../assets/images/mision-lg.webp');    
+    }
+
+    .bg-image-proyecto{
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),  
+        url('../assets/images/proyecto-lg.webp');        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;    
+    }
+
+    .bg-image-actividades{
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),  
+        url('../assets/images/actvidades-lg.webp');             
+    }
+
+    .bg-image-colabora{
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),  
+        url('../assets/images/colaborar-lg.webp');             
+        background-position: top;
+    }    
+}
+*/
+/*-----animacion para el titulo------*/
+.title-effect {
+    animation-duration: 1.5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+/*-----estilos para el nav------*/
+li > a.nav-link:hover {
+    border-left-style: solid;
+    border-left-color: var(--clr-quaternary);
+    color: var(--clr-quaternary)!important;
+}
+
+@media (min-width:992px) {
+    li > a.nav-link{
+        text-decoration: none;
+        background-image: linear-gradient(var(--clr-terciary), var(--clr-terciary));
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+
+    li > a.nav-link:hover{
+        background-size: 100% 2px;
+    }
+}
