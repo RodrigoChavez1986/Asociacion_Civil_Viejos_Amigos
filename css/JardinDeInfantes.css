@@ -4,9 +4,10 @@
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     ),  
-    url('../assets/images/JardinDeInfantes/FrenteLaTortugaFeliz.png');
+    url('../assets/images/JardinDeInfantes/FrenteLaTortugaFeliz.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;    
 }
 
@@ -23,7 +24,7 @@
             rgba(0, 0, 0, 0.4),
             rgba(0, 0, 0, 0.4)
         ),  
-        url('../assets/images/JardinDeInfantes/Frente_Bariloche_LaTortugaFeliz\(editado_768p\).png');
+        url('../assets/images/JardinDeInfantes/Frente_Bariloche_LaTortugaFeliz_768p.jpg');
     }    
 }
 
@@ -38,6 +39,6 @@
             rgba(0, 0, 0, 0.4),
             rgba(0, 0, 0, 0.4)
         ),          
-        url('../assets/images/JardinDeInfantes/FrenteLaTortugaFeliz.png');
+        url('../assets/images/JardinDeInfantes/Frente_Bariloche_LaTortugaFeliz_992p.jpg');
     }    
 }
